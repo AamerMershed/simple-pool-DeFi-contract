@@ -6,7 +6,7 @@ async function deposit(poolContract, amount) {
     // Deposit the specified amount into the contract
     await poolContract.methods.deposit().send({
         from: account,
-        value: web3.utils.toWei(amount, "ether")!
+        value: web3.utils.toWei(amount, "ether")
     });
 }
 
