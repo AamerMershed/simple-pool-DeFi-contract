@@ -13,4 +13,4 @@ async function deposit(poolContract, amount) {
 async function withdraw(poolContract) {
     // Get the current account
     const accounts = await web3.eth.getAccounts();
-    const account = accounts
+    const account = accounts!
