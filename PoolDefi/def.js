@@ -1,7 +1,7 @@
 async function deposit(poolContract, amount) {
     // Get the current account
     const accounts = await web3.eth.getAccounts();
-    const account = accounts[];
+    const account = accounts[0];
 
     // Deposit the specified amount into the contract
     await poolContract.methods.deposit().send({
