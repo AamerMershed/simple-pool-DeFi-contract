@@ -56,6 +56,6 @@ contract Pool {
     // Calculates the user's share of the pool's earnings
     function calculateEarnings() public view returns (uint) {
         uint elapsed = now - currentEpoch;
-        return (balances[msg.sender] * earningsRate * elapsed) / 1e18;
+        return (balances[msg.sender] * earningsRate * elapsed) / 118;
     }
 }
